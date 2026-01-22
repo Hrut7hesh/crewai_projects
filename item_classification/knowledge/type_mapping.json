@@ -1,0 +1,5 @@
+{
+  "Laptop": ["macbook", "notebook", "ultrabook"],
+  "Mobile": ["iphone", "smartphone", "android"],
+  "Accessory": ["mouse", "keyboard", "charger"]
+}
