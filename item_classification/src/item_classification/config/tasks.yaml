@@ -1,17 +1,19 @@
-# research_task:
-#   description: >
-#     Conduct a thorough research about {topic}
-#     Make sure you find any interesting and relevant information given
-#     the current year is {current_year}.
-#   expected_output: >
-#     A list with 10 bullet points of the most relevant information about {topic}
-#   agent: researcher
-
-# reporting_task:
-#   description: >
-#     Review the context you got and expand each topic into a full section for a report.
-#     Make sure the report is detailed and contains any and all relevant information.
-#   expected_output: >
-#     A fully fledged report with the main topics, each with a full section of information.
-#     Formatted as markdown without '```'
-#   agent: reporting_analyst
+classifying_task:
+  description: >
+    Classify the following item: {item_name}
+    Instructions:
+    1. Compare the item to the provided type mapping.
+    2. If the item is a specific brand, OS, or component (e.g., 'iOS', 'Android', 'Snapdragon'),
+    map it to its parent category (e.g., 'Phone') found in the mapping.
+      - Match keywords case-insensitively.
+      - If no logical match or parent category exists, return 'Unknown'.
+      Return STRICT JSON only:
+        {
+           item_name: string,
+           item_type: string,
+           matched_keyword: string | null,
+           confidence: High | Medium | Low
+        }
+  expected_output: >
+    JSON classification result
+  agent: classifier

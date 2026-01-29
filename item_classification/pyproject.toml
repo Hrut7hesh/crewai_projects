@@ -13,7 +13,7 @@ item_classification = "item_classification.main:run"
 run_crew = "item_classification.main:run"
 train = "item_classification.main:train"
 replay = "item_classification.main:replay"
-test = "item_classification.main:test"
+test = "item_classification.test_crew:test"
 run_with_trigger = "item_classification.main:run_with_trigger"
 
 [build-system]

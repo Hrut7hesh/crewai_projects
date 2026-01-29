@@ -12,7 +12,7 @@ class GetUserStoriesTool(BaseTool):
     description: str = "Fetches user stories from a specific Jira project key."
     args_schema: Type[BaseModel] = JiraToolInput
 
-    def _run(self, project_key: str) -> Any:
+    async def _run(self, project_key: str) -> Any:
         auth =( os.getenv("JIRA_EMAIL"),
             os.getenv("JIRA_API_TOKEN"))
         jira_options = {

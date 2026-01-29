@@ -15,7 +15,7 @@ jira_tool = "jira_tool.main:run"
 run_crew = "jira_tool.main:run"
 train = "jira_tool.main:train"
 replay = "jira_tool.main:replay"
-test = "jira_tool.main:test"
+test = "jira_tool.test:test"
 run_with_trigger = "jira_tool.main:run_with_trigger"
 
 [build-system]
