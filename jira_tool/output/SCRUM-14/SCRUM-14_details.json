@@ -1,0 +1,34 @@
+{
+    "key": "SCRUM-14",
+    "summary": "As a registered user I want to log in using email and password So that I can access my dashboard",
+    "description": "this is example description",
+    "status": "To Do",
+    "reporter": "Suprathika",
+    "assignee": "Suprathika",
+    "priority": "Medium",
+    "created": "2026-01-30T15:52:22.647+0530",
+    "updated": "2026-02-03T10:40:08.182+0530",
+    "components": [],
+    "comments": [
+        {
+            "author": "Suprathika",
+            "body": "testing crewai",
+            "created": "2026-01-30T15:53:27.617+0530"
+        },
+        {
+            "author": "Hruthesh",
+            "body": "please look into this issue",
+            "created": "2026-02-02T10:23:37.957+0530"
+        }
+    ],
+    "attachments_metadata": [
+        {
+            "filename": "Java.txt",
+            "status": "Downloaded"
+        },
+        {
+            "filename": "PromoCode_Validation_Score_Complete.txt",
+            "status": "Downloaded"
+        }
+    ]
+}

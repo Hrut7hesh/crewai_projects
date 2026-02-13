@@ -1,0 +1,11 @@
+generate_summary_task:
+  description: >
+    Analyze the following ticket details:
+    Topic: {topic}
+    Description: {description}
+    
+    Provide a professional paragraph summary that highlights the main 
+    issue and the suggested priority.
+  expected_output: >
+    A concise, professional summary of the technical issue.
+  agent: summary_specialist

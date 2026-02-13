@@ -32,4 +32,5 @@ class FetchCrew():
             agents=self.agents,
             tasks=self.tasks,
             process=Process.sequential,
+            verbose=True
         )
